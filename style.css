@@ -1,87 +1,31 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: white;
-}
-
-/* Hero */
 .hero {
-    background: #ce1126; /* Red */
+    height: 100vh;
+    background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+        url("images/shaza25.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    text-align: center;
     color: white;
-    padding: 100px 20px;
-    text-align: center;
 }
 
-/* Section Title */
-h2 {
-    text-align: center;
-    color: #1f8f3a; /* Green */
-    margin-top: 40px;
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ce1126;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-/* Gallery Grid */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 30px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
+.button:hover {
     background: #1f8f3a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: black;
-    color: white;
-}
-
-#gallery {
-    padding: 40px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
 }
