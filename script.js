@@ -1,20 +1,22 @@
-const galleryGrid = document.getElementById('gallery-grid');
+const gallery = document.getElementById("gallery-scroll");
 const totalImages = 31;
 
-for (let i = 1; i <= totalImages; i++) {
-
-    const card = document.createElement('div');
-    card.className = "gallery-card";
-
-    const img = document.createElement('img');
+for (let i = 1; i <= totalImages; i++){
+    const img = document.createElement("img");
     img.src = `images/shaza${i}.jpeg`;
     img.alt = `Shaza Drum ${i}`;
-    img.loading = "lazy";
 
-    img.onerror = function () {
-        card.remove();
+    img.onerror = function(){
+        img.remove();
     };
 
-    card.appendChild(img);
-    galleryGrid.appendChild(card);
+    gallery.appendChild(img);
+}
+
+// Scroll buttons
+function scrollGallery(direction){
+    gallery.scrollBy({
+        left: direction * 400,
+        behavior: "smooth"
+    });
 }
