@@ -15,12 +15,12 @@ align-items:center;
 padding:20px 40px;
 background:rgba(0,0,0,0.6);
 color:white;
-z-index:100;
+z-index:80;
 }
 
 .navbar a{
 color:white;
-margin-left:20px;
+margin-left:10px;
 text-decoration:none;
 font-weight:bold;
 }
