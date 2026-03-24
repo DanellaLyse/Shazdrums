@@ -25,7 +25,10 @@ margin-left:10px;
 text-decoration:none;
 font-weight:bold;
 }
-
+nav {
+  position: absolute;
+  right: 20px; /* add spacing */
+}
 /* HERO */
 .hero{
 height:100vh;
