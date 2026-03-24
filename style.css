@@ -9,14 +9,14 @@ scroll-behavior:smooth;
 .navbar{
 position:fixed;
 top:0;
-width:100%;
+width:90%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
+padding:20px 30px;
 background:rgba(0,0,0,0.7);
 color:white;
-z-index:100;
+z-index:90;
 }
 
 .navbar a{
