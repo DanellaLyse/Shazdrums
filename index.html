@@ -64,15 +64,22 @@ community events, and cultural storytelling.
   </div>
 </section>
 <!-- BOOKING -->
+<!-- BOOKING -->
 <section id="booking">
-<h2>Book Shaza Drums</h2>
-<form class="booking-form">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<input type="text" placeholder="Event Type">
-<textarea placeholder="Tell us about your event"></textarea>
-<button type="submit">Send Booking Request</button>
-</form>
+  <h2>Book Shaza Drums</h2>
+
+  <form class="booking-form" action="https://formsubmit.co/danellajones@gmail.com" method="POST">
+    
+    <input type="hidden" name="_subject" value="New Shaza Drums Booking Request">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="event_type" placeholder="Event Type">
+    <textarea name="event_details" placeholder="Tell us about your event"></textarea>
+
+    <button type="submit">Send Booking Request</button>
+  </form>
 </section>
 
 <!-- FOOTER -->
